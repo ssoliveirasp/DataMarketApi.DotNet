@@ -186,11 +186,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\dev\\Projetos\\Api\\Jwt\\src\\FlyApiContext.Domain\\FlyApiContext.Domain.csproj",
+      "projectUniqueName": "C:\\dev\\Projetos\\Api\\Jwt\\src\\FlyApi.Domain\\FlyApiContext.Domain.csproj",
       "projectName": "FlyApiContext.Domain",
-      "projectPath": "C:\\dev\\Projetos\\Api\\Jwt\\src\\FlyApiContext.Domain\\FlyApiContext.Domain.csproj",
+      "projectPath": "C:\\dev\\Projetos\\Api\\Jwt\\src\\FlyApi.Domain\\FlyApiContext.Domain.csproj",
       "packagesPath": "C:\\Users\\ssoliveira\\.nuget\\packages\\",
-      "outputPath": "C:\\dev\\Projetos\\Api\\Jwt\\src\\FlyApiContext.Domain\\obj\\",
+      "outputPath": "C:\\dev\\Projetos\\Api\\Jwt\\src\\FlyApi.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\ProgramData\\Xamarin\\NuGet\\",

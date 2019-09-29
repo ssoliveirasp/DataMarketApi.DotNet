@@ -1,7 +1,9 @@
+using FlyApi.Domain.Entity;
+
 namespace FlyApi.Domain.Repository
 {
 
-    interface IUsuarioRepository {
+    public interface IUsuarioRepository {
 
         UserFly Obter (string id);
         void Incluir (UserFly dadosUsuario);

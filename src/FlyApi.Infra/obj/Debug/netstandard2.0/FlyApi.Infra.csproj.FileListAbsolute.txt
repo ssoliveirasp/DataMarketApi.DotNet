@@ -1,0 +1,12 @@
+C:\dev\Projetos\Api\Jwt\src\FlyApi.Infra\obj\Debug\netstandard2.0\FlyApi.Infra.csprojAssemblyReference.cache
+C:\dev\Projetos\Api\Jwt\src\FlyApi.Infra\obj\Debug\netstandard2.0\FlyApi.Infra.csproj.CoreCompileInputs.cache
+C:\dev\Projetos\Api\Jwt\src\FlyApi.Infra\obj\Debug\netstandard2.0\FlyApi.Infra.AssemblyInfoInputs.cache
+C:\dev\Projetos\Api\Jwt\src\FlyApi.Infra\obj\Debug\netstandard2.0\FlyApi.Infra.AssemblyInfo.cs
+C:\dev\Projetos\Api\Jwt\src\FlyApi.Infra\bin\Debug\netstandard2.0\FlyApi.Infra.deps.json
+C:\dev\Projetos\Api\Jwt\src\FlyApi.Infra\bin\Debug\netstandard2.0\FlyApi.Infra.dll
+C:\dev\Projetos\Api\Jwt\src\FlyApi.Infra\bin\Debug\netstandard2.0\FlyApi.Infra.pdb
+C:\dev\Projetos\Api\Jwt\src\FlyApi.Infra\bin\Debug\netstandard2.0\FlyApiContext.Domain.dll
+C:\dev\Projetos\Api\Jwt\src\FlyApi.Infra\bin\Debug\netstandard2.0\FlyApiContext.Domain.pdb
+C:\dev\Projetos\Api\Jwt\src\FlyApi.Infra\obj\Debug\netstandard2.0\FlyApi.Infra.csproj.CopyComplete
+C:\dev\Projetos\Api\Jwt\src\FlyApi.Infra\obj\Debug\netstandard2.0\FlyApi.Infra.dll
+C:\dev\Projetos\Api\Jwt\src\FlyApi.Infra\obj\Debug\netstandard2.0\FlyApi.Infra.pdb

@@ -1,6 +1,6 @@
 
 REM Cria Soluçao
-dotnet sln add src/flyApiContent.Domain/FlyApiContent.Domain.csprojA
+dotnet sln add src/flyApi.Domain/FlyApiContext.Domain.csproj
 
 REM Adiciona projeto a solução
 dotnet sln add src/FlyApi.Infra/FlyApi.Infra.csproj

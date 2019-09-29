@@ -146,15 +146,6 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Microsoft.VisualStudio.Web.CodeGeneration.Design/2.0.1": {
-        "type": "package",
-        "compile": {
-          "lib/net461/dotnet-aspnet-codegenerator-design.exe": {}
-        },
-        "runtime": {
-          "lib/net461/dotnet-aspnet-codegenerator-design.exe": {}
-        }
-      },
       "NETStandard.Library/2.0.3": {
         "type": "package",
         "dependencies": {
@@ -719,29 +710,6 @@
         "microsoft.netcore.targets.1.1.0.nupkg.sha512",
         "microsoft.netcore.targets.nuspec",
         "runtime.json"
-      ]
-    },
-    "Microsoft.VisualStudio.Web.CodeGeneration.Design/2.0.1": {
-      "sha512": "C0mqn3wSD6NUqGpJIAbwCPxft7A+FbFWaQY45qAP/+QCKdvW8hPvIaV/fjmQg4IsjDpOj88ocYG7BkqmNDiBow==",
-      "type": "package",
-      "path": "microsoft.visualstudio.web.codegeneration.design/2.0.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net461/dotnet-aspnet-codegenerator-design.exe",
-        "lib/net461/dotnet-aspnet-codegenerator-design.xml",
-        "lib/netcoreapp2.0/dotnet-aspnet-codegenerator-design.dll",
-        "lib/netcoreapp2.0/dotnet-aspnet-codegenerator-design.xml",
-        "microsoft.visualstudio.web.codegeneration.design.2.0.1.nupkg.sha512",
-        "microsoft.visualstudio.web.codegeneration.design.nuspec",
-        "runtimes/win-arm/lib/net461/dotnet-aspnet-codegenerator-design.exe",
-        "runtimes/win-arm/lib/net461/dotnet-aspnet-codegenerator-design.xml",
-        "runtimes/win-arm64/lib/net461/dotnet-aspnet-codegenerator-design.exe",
-        "runtimes/win-arm64/lib/net461/dotnet-aspnet-codegenerator-design.xml",
-        "runtimes/win7-x64/lib/net461/dotnet-aspnet-codegenerator-design.exe",
-        "runtimes/win7-x64/lib/net461/dotnet-aspnet-codegenerator-design.xml",
-        "runtimes/win7-x86/lib/net461/dotnet-aspnet-codegenerator-design.exe",
-        "runtimes/win7-x86/lib/net461/dotnet-aspnet-codegenerator-design.xml"
       ]
     },
     "NETStandard.Library/2.0.3": {
@@ -2506,15 +2474,14 @@
     },
     "FlyApiContext.Domain/1.0.0": {
       "type": "project",
-      "path": "../FlyApi.Domain/FlyApiContext.Domain.csproj",
-      "msbuildProject": "../FlyApi.Domain/FlyApiContext.Domain.csproj"
+      "path": "../flyApi.Domain/FlyApiContext.Domain.csproj",
+      "msbuildProject": "../flyApi.Domain/FlyApiContext.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
       "FlyApiContext.Domain >= 1.0.0",
       "Microsoft.EntityFrameworkCore.InMemory >= 2.0.1",
-      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.0.1",
       "NETStandard.Library >= 2.0.3"
     ]
   },
@@ -2553,8 +2520,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\dev\\Projetos\\Api\\Jwt\\src\\FlyApi.Domain\\FlyApiContext.Domain.csproj": {
-              "projectPath": "C:\\dev\\Projetos\\Api\\Jwt\\src\\FlyApi.Domain\\FlyApiContext.Domain.csproj"
+            "C:\\dev\\Projetos\\Api\\Jwt\\src\\flyApi.Domain\\FlyApiContext.Domain.csproj": {
+              "projectPath": "C:\\dev\\Projetos\\Api\\Jwt\\src\\flyApi.Domain\\FlyApiContext.Domain.csproj"
             }
           }
         }
@@ -2572,10 +2539,6 @@
             "target": "Package",
             "version": "[2.0.1, )"
           },
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
-            "target": "Package",
-            "version": "[2.0.1, )"
-          },
           "NETStandard.Library": {
             "suppressParent": "All",
             "target": "Package",
@@ -2590,17 +2553,5 @@
         "warn": true
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.VisualStudio.Web.CodeGeneration.Design 2.0.1' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETStandard,Version=v2.0'. This package may not be fully compatible with your project.",
-      "libraryId": "Microsoft.VisualStudio.Web.CodeGeneration.Design",
-      "targetGraphs": [
-        ".NETStandard,Version=v2.0"
-      ]
-    }
-  ]
+  }
 }

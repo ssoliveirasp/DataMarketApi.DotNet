@@ -1,19 +1,22 @@
-using FlyApi.Domain.Repository;
+//  using FlyApi.
 
-public class UsuarioRepository : IUsuarioRepository
+namespace FlyApi.Infra.Repository
 {
-    public UsuarioRepository()
+    public class UsuarioRepository 
     {
-        
-    }
+        public UsuarioRepository()
+        {
+            
+        }
 
-    public void Incluir(UserFly dadosUsuario)
-    {
-       
-    }
+        // public void Incluir(UserFly dadosUsuario)
+        // {
 
-    public UserFly Obter(string id)
-    {
-       
+        // }
+
+        // public UserFly Obter(string id)
+        // {
+
+        // }
     }
 }
