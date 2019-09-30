@@ -1,0 +1,14 @@
+C:\dev\Projetos\Api\Jwt\src\FlyApi.Api\obj\Debug\netcoreapp2.2\FlyApi.Api.csproj.CoreCompileInputs.cache
+C:\dev\Projetos\Api\Jwt\src\FlyApi.Api\obj\Debug\netcoreapp2.2\FlyApi.Api.RazorAssemblyInfo.cache
+C:\dev\Projetos\Api\Jwt\src\FlyApi.Api\obj\Debug\netcoreapp2.2\FlyApi.Api.RazorAssemblyInfo.cs
+C:\dev\Projetos\Api\Jwt\src\FlyApi.Api\obj\Debug\netcoreapp2.2\FlyApi.Api.AssemblyInfoInputs.cache
+C:\dev\Projetos\Api\Jwt\src\FlyApi.Api\obj\Debug\netcoreapp2.2\FlyApi.Api.AssemblyInfo.cs
+C:\dev\Projetos\Api\Jwt\src\FlyApi.Api\bin\Debug\netcoreapp2.2\FlyApi.Api.deps.json
+C:\dev\Projetos\Api\Jwt\src\FlyApi.Api\bin\Debug\netcoreapp2.2\FlyApi.Api.runtimeconfig.json
+C:\dev\Projetos\Api\Jwt\src\FlyApi.Api\bin\Debug\netcoreapp2.2\FlyApi.Api.runtimeconfig.dev.json
+C:\dev\Projetos\Api\Jwt\src\FlyApi.Api\bin\Debug\netcoreapp2.2\FlyApi.Api.dll
+C:\dev\Projetos\Api\Jwt\src\FlyApi.Api\bin\Debug\netcoreapp2.2\FlyApi.Api.pdb
+C:\dev\Projetos\Api\Jwt\src\FlyApi.Api\obj\Debug\netcoreapp2.2\FlyApi.Api.RazorTargetAssemblyInfo.cache
+C:\dev\Projetos\Api\Jwt\src\FlyApi.Api\obj\Debug\netcoreapp2.2\FlyApi.Api.dll
+C:\dev\Projetos\Api\Jwt\src\FlyApi.Api\obj\Debug\netcoreapp2.2\FlyApi.Api.pdb
+C:\dev\Projetos\Api\Jwt\src\FlyApi.Api\obj\Debug\netcoreapp2.2\FlyApi.Api.csprojAssemblyReference.cache
