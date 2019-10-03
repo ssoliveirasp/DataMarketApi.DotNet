@@ -1,3 +1,4 @@
+using System.Net.Mime;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -5,30 +6,33 @@ using System.Threading.Tasks;
 using FlyApi.Api.Configurations.Shared;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Mvc.ApiExplorer;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Mvc;
+using System.Diagnostics.CodeAnalysis;
 
 namespace FlyApi.Api.Configuration
 {
-    public partial class apiConfigureApplication: IConfigureApplication
+    public static partial class apiConfigureApplication
     {
-        public IConfigureApplication addException()
+        public static void addFlyException(this IApplicationBuilder application, IHostingEnvironment env, IApiVersionDescriptionProvider provider)
         {
-            if (_env.IsDevelopment())
+            if (env.IsDevelopment())
             {
-                this.addExceptionDev();
+                apiConfigureApplication.addExceptionDev(application, env, provider);
             }
-
-            return this;
-        }
-        public void addExceptionDev()
-        {
-            _application.UseDeveloperExceptionPage();
+            else
+            {
+                apiConfigureApplication.addExceptionProd(application, env, provider);
+            }
         }
 
-        public void addExceptionProd()
+        private static void addExceptionDev(IApplicationBuilder application, IHostingEnvironment env, IApiVersionDescriptionProvider provider)
         {
+            application.UseDeveloperExceptionPage();
+        }
 
+        private static void addExceptionProd(IApplicationBuilder application, IHostingEnvironment env, IApiVersionDescriptionProvider provider)
+        {
         }
     }
 }

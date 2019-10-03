@@ -7,40 +7,45 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ApiExplorer;
 using Swashbuckle.AspNetCore.SwaggerUI;
 
 namespace FlyApi.Api.Configuration
 {
-    public partial class apiConfigureApplication: IConfigureApplication
+    public static partial class apiConfigureApplication
     {
-        public IConfigureApplication UseSwaggerUI()
+        public static void UseFlySwaggerUI(this IApplicationBuilder application, IHostingEnvironment env, IApiVersionDescriptionProvider provider)
         {
-            if (_env.IsDevelopment())
+            if (env.IsDevelopment())
             {
-
-                //this._application.UseSwaggerUI(c =>
-                //{
-                //    foreach (var description in )
-                //        c.SwaggerEndpoint("/swagger/v1/swagger.json",
-                //        "Conversor de Temperaturas");
-                //});
-                this._application.UseSwagger();
-
-                this._application.UseSwaggerUI(options =>
-                {
-                    foreach (var description in this._provider.ApiVersionDescriptions)
-                    {
-                        options.SwaggerEndpoint(
-                        $"/swagger/{description.GroupName}/swagger.json",
-                        description.GroupName.ToUpperInvariant());
-                    }
-
-                    options.DocExpansion(DocExpansion.List);
-                });
+                apiConfigureApplication.UseFlyConfigSwaggerUIDev(application, env, provider);
             }
-
-            return this;
+            else
+            {
+                apiConfigureApplication.UseFlyConfigSwaggerUIProd(application, env, provider);
+            }
         }
-        
+
+        private static void UseFlyConfigSwaggerUIDev(IApplicationBuilder application, IHostingEnvironment env, IApiVersionDescriptionProvider provider)
+        {
+            application.UseSwagger();
+
+            application.UseSwaggerUI(options =>
+            {
+                foreach (var description in provider.ApiVersionDescriptions)
+                {
+                    options.SwaggerEndpoint(
+                    $"/swagger/{description.GroupName}/swagger.json",
+                    description.GroupName.ToUpperInvariant());
+                }
+
+                options.DocExpansion(DocExpansion.List);
+            });
+        }
+
+        private static void UseFlyConfigSwaggerUIProd(IApplicationBuilder application, IHostingEnvironment env, IApiVersionDescriptionProvider provider)
+        {
+        }
+
     }
 }

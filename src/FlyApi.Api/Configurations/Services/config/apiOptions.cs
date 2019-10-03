@@ -9,13 +9,11 @@ using FlyApi.Api.Configurations.Shared;
 
 namespace FlyApi.Api.Configuration
 {
-    public partial class apiConfigureServices : IConfigureServices
+    public static partial class ApiConfigureServices
     {
-        public IConfigureServices addConfig()
+        public static void addFlyConfig(this IServiceCollection services)
         {
-            _services.AddOptions();
-            
-            return this;
+            services.AddOptions();
         }
         
     }

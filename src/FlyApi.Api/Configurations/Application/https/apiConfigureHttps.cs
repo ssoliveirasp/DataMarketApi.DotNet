@@ -7,34 +7,33 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ApiExplorer;
 
 namespace FlyApi.Api.Configuration
 {
-    public partial class apiConfigureApplication: IConfigureApplication
+    public static partial class apiConfigureApplication
     {
 
-        public IConfigureApplication addHttps()
+        public static void addFlyHttps(this IApplicationBuilder application, IHostingEnvironment env, IApiVersionDescriptionProvider provider)
         {
-            if (!_env.IsDevelopment())
+            if (env.IsDevelopment())
             {
-                this.addHttpsDev();
+                apiConfigureApplication.addFlyHttpsDev(application);
             }
             else
             {
-                this.addHttpsProd();
+                apiConfigureApplication.addFlyHttpsProd(application);
             }
-
-            return this;
         }
 
-        public void addHttpsDev()
+        private static void addFlyHttpsDev(IApplicationBuilder application)
         {
-            _application.UseHsts();
-            _application.UseHttpsRedirection();
+            application.UseHttpsRedirection();
         }
-        public void addHttpsProd()
+        private static void addFlyHttpsProd(IApplicationBuilder application)
         {
-            _application.UseHttpsRedirection();
+            application.UseHsts();
+            application.UseHttpsRedirection();
         }
     }
 }

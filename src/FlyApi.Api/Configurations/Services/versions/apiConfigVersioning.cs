@@ -10,11 +10,11 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace FlyApi.Api.Configuration
 {
-    public partial class apiConfigureServices : IConfigureServices
+    public static partial class apiConfigureServices
     {
-        public IConfigureServices addApiVersioning()
+        private static void AddFlyApiVersioning(this IServiceCollection services)
         {
-            _services.AddApiVersioning(config =>
+            services.AddApiVersioning(config =>
             {
                 config.ReportApiVersions = true;
                 config.AssumeDefaultVersionWhenUnspecified = true;
@@ -22,9 +22,7 @@ namespace FlyApi.Api.Configuration
                 config.ApiVersionReader = new HeaderApiVersionReader("api-version");
             });
 
-            _services.AddMvcCore().AddVersionedApiExplorer(o => { o.GroupNameFormat = "'v'VVV"; });
-
-            return this;
+            services.AddMvcCore().AddVersionedApiExplorer(o => { o.GroupNameFormat = "'v'VVV"; });
         }
     }
 }

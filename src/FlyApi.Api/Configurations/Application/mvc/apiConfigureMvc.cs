@@ -7,17 +7,15 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ApiExplorer;
 
 namespace FlyApi.Api.Configuration
 {
-    public partial class apiConfigureApplication : IConfigureApplication
+    public static partial class apiConfigureApplication  
     {
-        public IConfigureApplication addMvc()
+        public static void addFlyMvc(this IApplicationBuilder application, IHostingEnvironment env, IApiVersionDescriptionProvider provider)
         {
-            _application.UseMvc();
-
-            return this;
+            application.UseMvc();
         }
-
     }
 }

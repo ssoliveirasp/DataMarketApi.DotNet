@@ -11,14 +11,14 @@ using Swashbuckle.AspNetCore.Swagger;
 
 namespace FlyApi.Api.Configuration
 {
-    public partial class apiConfigureServices : IConfigureServices
+    public static partial class apiConfigureServices
     {
-        public IConfigureServices AddSwaggerGen()
+        private static void AddFlySwaggerGen(this IServiceCollection services)
         {
-            _services.AddSwaggerGen(
+            services.AddSwaggerGen(
                 options =>
                 {
-                    var provider = _services.BuildServiceProvider()
+                    var provider = services.BuildServiceProvider()
                                         .GetRequiredService<IApiVersionDescriptionProvider>();
 
                     foreach (var description in provider.ApiVersionDescriptions)
@@ -32,8 +32,6 @@ namespace FlyApi.Api.Configuration
                             });
                     }
                 });
-
-            return this;
         }
     }
 }

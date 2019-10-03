@@ -9,11 +9,11 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace FlyApi.Api.Configuration
 {
-    public partial class apiConfigureServices : IConfigureServices
+    public static partial class apiConfigureServices
     {
-        public IConfigureServices addCors()
+        private static void addFlyCors(this IServiceCollection services)
         {
-            _services.AddCors(options =>
+            services.AddCors(options =>
             {
                 options.AddPolicy("AllowAllOrigins", builder =>
                 {
@@ -22,8 +22,6 @@ namespace FlyApi.Api.Configuration
                     builder.AllowAnyOrigin();
                 });
             });
-            
-            return this;
         }
     }
 }

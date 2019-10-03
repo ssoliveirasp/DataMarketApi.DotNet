@@ -9,15 +9,12 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace FlyApi.Api.Configuration
 {
-    public partial class apiConfigureServices : IConfigureServices
+    public static partial class apiConfigureServices
     {
-        public IConfigureServices addMvc()
+        private static void addFlyMvc(this IServiceCollection services)
         {
-            _services.AddMvc(options =>
-                             options.EnableEndpointRouting = false)
-                             .SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
-
-            return this;
+            services.AddMvc(options => options.EnableEndpointRouting = false)
+                            .SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
     }
 }

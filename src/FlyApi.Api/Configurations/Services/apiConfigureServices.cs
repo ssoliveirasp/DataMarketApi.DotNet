@@ -9,14 +9,16 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace FlyApi.Api.Configuration
 {
-    public partial class apiConfigureServices: IConfigureServices
+    public static partial class apiConfigureServices
     {
-        private IServiceCollection _services;
-
-        public apiConfigureServices(IServiceCollection services)
+        public static void ApiFlyConfigureServices(this IServiceCollection services)
         {
-            _services = services;
+               services.addFlyConfig();
+               services.addFlyCors();
+               services.AddFlyRouting();
+               services.addFlyMvc();
+               services.AddFlyApiVersioning();
+               services.AddFlySwaggerGen();
         }
-
     }
 }

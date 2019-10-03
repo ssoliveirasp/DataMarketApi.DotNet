@@ -9,13 +9,11 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace FlyApi.Api.Configuration
 {
-    public partial class apiConfigureServices : IConfigureServices
+    public static partial class apiConfigureServices
     {
-        public IConfigureServices AddRouting()
+        private static void AddFlyRouting(this IServiceCollection services)
         {
-            _services.AddRouting(r => { r.LowercaseUrls = true; });
-
-            return this;
+            services.AddRouting(r => { r.LowercaseUrls = true; });
         }
     }
 }

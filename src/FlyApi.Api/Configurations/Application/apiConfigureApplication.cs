@@ -10,17 +10,14 @@ using Microsoft.AspNetCore.Mvc.ApiExplorer;
 
 namespace FlyApi.Api.Configuration
 {
-    public partial class apiConfigureApplication
+    public static partial class apiConfigureApplication
     {
-        private IApplicationBuilder _application;
-        private IHostingEnvironment _env;
-        private IApiVersionDescriptionProvider _provider;
-
-        public apiConfigureApplication(IApplicationBuilder application, IHostingEnvironment env, IApiVersionDescriptionProvider provider)
+        public  static void apiFlyConfigureApplication(this IApplicationBuilder application, IHostingEnvironment env, IApiVersionDescriptionProvider provider)
         {
-            _application = application;
-            _env = env;
-            _provider = provider;
+            application.UseFlySwaggerUI(env, provider);
+            application.addFlyException(env, provider);
+            application.addFlyHttps(env, provider);
+            application.addFlyMvc(env, provider);
         }
 
     }
