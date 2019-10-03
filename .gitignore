@@ -3,3 +3,5 @@
 /.vs
 /src/.vs/FlyApi/v15/Server/sqlite3
 /src/.vs/FlyApi/v15
+/src/FlyApi.Api/bin
+/src/FlyApi.Api/obj
