@@ -12,17 +12,17 @@ using System.Diagnostics.CodeAnalysis;
 
 namespace FlyApi.Api.Configuration
 {
-    public static partial class apiConfigureApplication
+    public static class apiConfigureException
     {
         public static void addFlyException(this IApplicationBuilder application, IHostingEnvironment env, IApiVersionDescriptionProvider provider)
         {
             if (env.IsDevelopment())
             {
-                apiConfigureApplication.addExceptionDev(application, env, provider);
+                apiConfigureException.addExceptionDev(application, env, provider);
             }
             else
             {
-                apiConfigureApplication.addExceptionProd(application, env, provider);
+                apiConfigureException.addExceptionProd(application, env, provider);
             }
         }
 

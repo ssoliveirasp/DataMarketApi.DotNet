@@ -11,7 +11,7 @@ using Microsoft.AspNetCore.Mvc.ApiExplorer;
 
 namespace FlyApi.Api.Configuration
 {
-    public static partial class apiConfigureApplication  
+    public static class apiConfigureMvc
     {
         public static void addFlyMvc(this IApplicationBuilder application, IHostingEnvironment env, IApiVersionDescriptionProvider provider)
         {

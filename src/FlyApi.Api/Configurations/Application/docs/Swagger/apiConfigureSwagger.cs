@@ -12,17 +12,17 @@ using Swashbuckle.AspNetCore.SwaggerUI;
 
 namespace FlyApi.Api.Configuration
 {
-    public static partial class apiConfigureApplication
+    public static  class apiConfigureSwagger
     {
         public static void UseFlySwaggerUI(this IApplicationBuilder application, IHostingEnvironment env, IApiVersionDescriptionProvider provider)
         {
             if (env.IsDevelopment())
             {
-                apiConfigureApplication.UseFlyConfigSwaggerUIDev(application, env, provider);
+                apiConfigureSwagger.UseFlyConfigSwaggerUIDev(application, env, provider);
             }
             else
             {
-                apiConfigureApplication.UseFlyConfigSwaggerUIProd(application, env, provider);
+                apiConfigureSwagger.UseFlyConfigSwaggerUIProd(application, env, provider);
             }
         }
 

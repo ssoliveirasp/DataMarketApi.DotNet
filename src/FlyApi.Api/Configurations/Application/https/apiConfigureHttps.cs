@@ -11,18 +11,18 @@ using Microsoft.AspNetCore.Mvc.ApiExplorer;
 
 namespace FlyApi.Api.Configuration
 {
-    public static partial class apiConfigureApplication
+    public static class apiConfigureHttps
     {
 
         public static void addFlyHttps(this IApplicationBuilder application, IHostingEnvironment env, IApiVersionDescriptionProvider provider)
         {
             if (env.IsDevelopment())
             {
-                apiConfigureApplication.addFlyHttpsDev(application);
+                apiConfigureHttps.addFlyHttpsDev(application);
             }
             else
             {
-                apiConfigureApplication.addFlyHttpsProd(application);
+                apiConfigureHttps.addFlyHttpsProd(application);
             }
         }
 
