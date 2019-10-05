@@ -11,3 +11,4 @@ C:\dev\Projetos\Api\Jwt\src\FlyApi.Api\bin\Debug\netcoreapp2.2\FlyApi.Api.pdb
 C:\dev\Projetos\Api\Jwt\src\FlyApi.Api\obj\Debug\netcoreapp2.2\FlyApi.Api.RazorTargetAssemblyInfo.cache
 C:\dev\Projetos\Api\Jwt\src\FlyApi.Api\obj\Debug\netcoreapp2.2\FlyApi.Api.dll
 C:\dev\Projetos\Api\Jwt\src\FlyApi.Api\obj\Debug\netcoreapp2.2\FlyApi.Api.pdb
+C:\dev\Projetos\Api\Jwt\src\FlyApi.Api\obj\Debug\netcoreapp2.2\FlyApi.Api.csprojAssemblyReference.cache

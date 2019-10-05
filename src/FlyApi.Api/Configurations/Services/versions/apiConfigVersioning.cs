@@ -10,9 +10,9 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace FlyApi.Api.Configuration
 {
-    public static partial class apiConfigureServices
+    public static class apiConfigVersioning
     {
-        private static void AddFlyApiVersioning(this IServiceCollection services)
+        public static void AddFlyApiVersioning(this IServiceCollection services)
         {
             services.AddApiVersioning(config =>
             {

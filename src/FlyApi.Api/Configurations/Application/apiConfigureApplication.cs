@@ -19,6 +19,7 @@ namespace FlyApi.Api.Configuration
             application.addFlyException(env, provider);
             application.addFlyHttps(env, provider);
             application.addFlyMvc(env, provider);
+            application.UseFlyHealthChecks(env, provider);
         }
 
     }

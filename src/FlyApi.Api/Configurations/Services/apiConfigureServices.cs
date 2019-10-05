@@ -13,12 +13,13 @@ namespace FlyApi.Api.Configuration
     {
         public static void ApiFlyConfigureServices(this IServiceCollection services)
         {
-               services.addFlyConfig();
-               services.addFlyCors();
-               services.AddFlyRouting();
-               services.addFlyMvc();
-               services.AddFlyApiVersioning();
-               services.AddFlySwaggerGen();
+            services.addFlyConfig();
+            services.addFlyCors();
+            services.AddFlyRouting();
+            services.addFlyMvc();
+            services.AddFlyApiVersioning();
+            services.AddFlySwaggerGen();
+            services.AddFlyHealthChecks();
         }
     }
 }
