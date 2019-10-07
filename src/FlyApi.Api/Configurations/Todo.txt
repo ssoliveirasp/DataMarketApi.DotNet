@@ -14,8 +14,9 @@ Cache com Redis
 
 https://medium.com/@renato.groffe/asp-net-core-dicas-%C3%BAteis-para-o-dia-a-dia-de-um-desenvolvedor-parte-3-9e5ddc1283b0
 
-Tratamento de erros HTTPS
+Tratamento de erros HTTP
 
+https://medium.com/microservices-for-net-developers/making-http-easier-with-net-core-5d46dd805850
 
 Log de Aplicação
 
