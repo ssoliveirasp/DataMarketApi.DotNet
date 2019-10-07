@@ -1,0 +1,22 @@
+Removendo valores nulos do retorno de APIs REST
+
+https://medium.com/@renato.groffe/asp-net-core-2-0-removendo-valores-nulos-no-retorno-de-uma-api-fa3cf63078c7
+
+ResponseCompression
+
+https://medium.com/@renato.groffe/asp-net-core-dicas-%C3%BAteis-para-o-dia-a-dia-de-um-desenvolvedor-parte-3-9e5ddc1283b0
+
+Retornando XML em APIs REST
+
+https://medium.com/@renato.groffe/asp-net-core-2-0-retornando-xml-em-apis-rest-8e6cb03752d2
+
+Cache com Redis
+
+https://medium.com/@renato.groffe/asp-net-core-dicas-%C3%BAteis-para-o-dia-a-dia-de-um-desenvolvedor-parte-3-9e5ddc1283b0
+
+Implementando Load Balancing com Nginx
+
+https://medium.com/@renato.groffe/asp-net-core-2-2-implementando-load-balancing-com-nginx-docker-e-docker-compose-d8949aa61b
+
+
+
