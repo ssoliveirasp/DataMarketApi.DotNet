@@ -14,6 +14,15 @@ Cache com Redis
 
 https://medium.com/@renato.groffe/asp-net-core-dicas-%C3%BAteis-para-o-dia-a-dia-de-um-desenvolvedor-parte-3-9e5ddc1283b0
 
+Tratamento de erros HTTPS
+
+
+Log de Aplicação
+
+https://www.infoworld.com/article/3438540/using-advanced-nlog-features-in-aspnet-core.html
+https://medium.com/@fernando.abreu/utilizando-log-em-asp-net-core-171e90732ec5
+https://www.programmingwithwolfgang.com/asp-net-core-logging-to-a-database-with-nlog/
+
 Implementando Load Balancing com Nginx
 
 https://medium.com/@renato.groffe/asp-net-core-2-2-implementando-load-balancing-com-nginx-docker-e-docker-compose-d8949aa61b
