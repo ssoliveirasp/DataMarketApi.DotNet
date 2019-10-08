@@ -29,4 +29,10 @@ Implementando Load Balancing com Nginx
 https://medium.com/@renato.groffe/asp-net-core-2-2-implementando-load-balancing-com-nginx-docker-e-docker-compose-d8949aa61b
 
 
+************************************************************
+Autenticação 
+************************************************************
 
+openiddict
+
+https://www.jerriepelser.com/blog/implementing-openiddict-authorization-server-part-1/
