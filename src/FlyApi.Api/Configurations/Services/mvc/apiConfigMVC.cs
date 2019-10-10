@@ -13,8 +13,29 @@ namespace FlyApi.Api.Configuration
     {
         public static void addFlyMvc(this IServiceCollection services)
         {
-            services.AddMvc(options => options.EnableEndpointRouting = false)
-                            .SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            IMvcBuilder MvcBuilder = services.AddMvc(options => options.EnableEndpointRouting = false);
+
+            apiConfigMVC.SetFlyCompatibilityVersion(MvcBuilder);
+            apiConfigMVC.AddFlyJsonOptions(MvcBuilder);
+            apiConfigMVC.AddFlyXmlSerializerFormatters(MvcBuilder);
         }
+
+        private static void SetFlyCompatibilityVersion(IMvcBuilder MvcBuilder)
+        {
+            MvcBuilder.SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+        }
+
+        private static void AddFlyJsonOptions(IMvcBuilder MvcBuilder) {
+            MvcBuilder.AddJsonOptions(
+                option => option.SerializerSettings.NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore
+            );
+        }
+
+        private static void AddFlyXmlSerializerFormatters(IMvcBuilder MvcBuilder)
+        {
+            MvcBuilder.AddXmlSerializerFormatters();
+        }
+
+
     }
 }
