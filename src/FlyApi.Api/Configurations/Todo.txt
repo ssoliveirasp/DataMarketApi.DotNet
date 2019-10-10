@@ -12,6 +12,7 @@ https://medium.com/@renato.groffe/asp-net-core-2-0-retornando-xml-em-apis-rest-8
 
 Cache com Redis
 
+http://www.kamilgrzybek.com/design/cache-aside-pattern-in-net-core/
 https://medium.com/@renato.groffe/asp-net-core-dicas-%C3%BAteis-para-o-dia-a-dia-de-um-desenvolvedor-parte-3-9e5ddc1283b0
 
 Tratamento de erros HTTP
