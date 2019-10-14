@@ -185,11 +185,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\dev\\My\\FlyApiCore\\src\\flyApi.Domain\\FlyApiContext.Domain.csproj",
-      "projectName": "FlyApiContext.Domain",
-      "projectPath": "C:\\dev\\My\\FlyApiCore\\src\\flyApi.Domain\\FlyApiContext.Domain.csproj",
+      "projectUniqueName": "c:\\dev\\My\\FlyApiCore\\src\\FlyApi.Infra.CrossCutting.Caching\\FlyApi.Infra.CrossCutting.Caching.csproj",
+      "projectName": "FlyApi.Infra.CrossCutting.Caching",
+      "projectPath": "c:\\dev\\My\\FlyApiCore\\src\\FlyApi.Infra.CrossCutting.Caching\\FlyApi.Infra.CrossCutting.Caching.csproj",
       "packagesPath": "C:\\Users\\s.de oliveira\\.nuget\\packages\\",
-      "outputPath": "C:\\dev\\My\\FlyApiCore\\src\\flyApi.Domain\\obj\\",
+      "outputPath": "c:\\dev\\My\\FlyApiCore\\src\\FlyApi.Infra.CrossCutting.Caching\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

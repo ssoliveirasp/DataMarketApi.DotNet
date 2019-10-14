@@ -7,10 +7,10 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("FlyApi.Api")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("FlyApi.Infra.CrossCutting.Caching")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
-[assembly: System.Reflection.AssemblyProductAttribute("FlyApi.Api")]
-[assembly: System.Reflection.AssemblyTitleAttribute("FlyApi.Api")]
+[assembly: System.Reflection.AssemblyProductAttribute("FlyApi.Infra.CrossCutting.Caching")]
+[assembly: System.Reflection.AssemblyTitleAttribute("FlyApi.Infra.CrossCutting.Caching")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

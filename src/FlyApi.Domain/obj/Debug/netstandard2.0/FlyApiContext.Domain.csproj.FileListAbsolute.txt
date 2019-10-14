@@ -16,3 +16,12 @@ C:\dev\Projetos\Api\Jwt\src\FlyApi.Domain\obj\Debug\netstandard2.0\FlyApiContext
 C:\dev\Projetos\Api\Jwt\src\FlyApi.Domain\bin\Debug\netstandard2.0\FlyApiContext.Domain.deps.json
 C:\dev\Projetos\Api\Jwt\src\FlyApi.Domain\bin\Debug\netstandard2.0\FlyApiContext.Domain.dll
 C:\dev\Projetos\Api\Jwt\src\FlyApi.Domain\bin\Debug\netstandard2.0\FlyApiContext.Domain.pdb
+C:\dev\My\FlyApiCore\src\flyApi.Domain\bin\Debug\netstandard2.0\FlyApiContext.Domain.deps.json
+C:\dev\My\FlyApiCore\src\flyApi.Domain\bin\Debug\netstandard2.0\FlyApiContext.Domain.dll
+C:\dev\My\FlyApiCore\src\flyApi.Domain\bin\Debug\netstandard2.0\FlyApiContext.Domain.pdb
+C:\dev\My\FlyApiCore\src\flyApi.Domain\obj\Debug\netstandard2.0\FlyApiContext.Domain.csprojAssemblyReference.cache
+C:\dev\My\FlyApiCore\src\flyApi.Domain\obj\Debug\netstandard2.0\FlyApiContext.Domain.csproj.CoreCompileInputs.cache
+C:\dev\My\FlyApiCore\src\flyApi.Domain\obj\Debug\netstandard2.0\FlyApiContext.Domain.AssemblyInfoInputs.cache
+C:\dev\My\FlyApiCore\src\flyApi.Domain\obj\Debug\netstandard2.0\FlyApiContext.Domain.AssemblyInfo.cs
+C:\dev\My\FlyApiCore\src\flyApi.Domain\obj\Debug\netstandard2.0\FlyApiContext.Domain.dll
+C:\dev\My\FlyApiCore\src\flyApi.Domain\obj\Debug\netstandard2.0\FlyApiContext.Domain.pdb

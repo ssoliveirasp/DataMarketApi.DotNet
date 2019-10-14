@@ -1,0 +1,9 @@
+c:\dev\My\FlyApiCore\src\FlyApi.Infra.CrossCutting.Caching\bin\Debug\netstandard2.0\FlyApi.Infra.CrossCutting.Caching.deps.json
+c:\dev\My\FlyApiCore\src\FlyApi.Infra.CrossCutting.Caching\bin\Debug\netstandard2.0\FlyApi.Infra.CrossCutting.Caching.dll
+c:\dev\My\FlyApiCore\src\FlyApi.Infra.CrossCutting.Caching\bin\Debug\netstandard2.0\FlyApi.Infra.CrossCutting.Caching.pdb
+c:\dev\My\FlyApiCore\src\FlyApi.Infra.CrossCutting.Caching\obj\Debug\netstandard2.0\FlyApi.Infra.CrossCutting.Caching.csprojAssemblyReference.cache
+c:\dev\My\FlyApiCore\src\FlyApi.Infra.CrossCutting.Caching\obj\Debug\netstandard2.0\FlyApi.Infra.CrossCutting.Caching.csproj.CoreCompileInputs.cache
+c:\dev\My\FlyApiCore\src\FlyApi.Infra.CrossCutting.Caching\obj\Debug\netstandard2.0\FlyApi.Infra.CrossCutting.Caching.AssemblyInfoInputs.cache
+c:\dev\My\FlyApiCore\src\FlyApi.Infra.CrossCutting.Caching\obj\Debug\netstandard2.0\FlyApi.Infra.CrossCutting.Caching.AssemblyInfo.cs
+c:\dev\My\FlyApiCore\src\FlyApi.Infra.CrossCutting.Caching\obj\Debug\netstandard2.0\FlyApi.Infra.CrossCutting.Caching.dll
+c:\dev\My\FlyApiCore\src\FlyApi.Infra.CrossCutting.Caching\obj\Debug\netstandard2.0\FlyApi.Infra.CrossCutting.Caching.pdb
