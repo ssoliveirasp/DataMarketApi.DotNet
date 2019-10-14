@@ -4,3 +4,5 @@
 /src/.vs/FlyApi/v15
 /src/FlyApi.Api/bin
 /src/FlyApi.Api/obj
+src/FlyApi.Api/obj/Debug/netcoreapp2.2/FlyApi.Api.dll
+src/FlyApi.Api/obj/Debug/netcoreapp2.2/FlyApi.Api.assets.cache
