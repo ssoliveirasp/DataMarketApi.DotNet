@@ -1,0 +1,22 @@
+
+#String
+set chave1
+get chave1
+
+#incrementar
+incr numero
+
+#lista
+adiciona item da lista a direita
+rpush lista1 v1Direita
+
+adiciona item da lista a direita
+lpush lista1 v2Esquerda
+
+adiciona item da lista a esquerda
+lrange - pesquisa
+
+Remover da lista
+lpop lista1
+rpop lista1
+
