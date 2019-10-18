@@ -47,3 +47,5 @@ Referencias
 https://movile.blog/comecando-a-usar-redis-nas-suas-solucoes/
 
 https://medium.com/@nelson.souza/cache-distribu%C3%ADdo-com-net-core-e-redis-f19e361cfd0b
+
+https://github.com/joaoramyllo/Livros---CdC
