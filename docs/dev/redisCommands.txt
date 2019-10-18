@@ -35,8 +35,9 @@ HMSET users-302 cidade "Sao Paulo"
 Lista propriedades
 HGETALL users-302
 
-Lista propriedade especifica
-HGET users-302 id
+Lista propriedade(s) especifica
+HGET  users-302 id
+HMGET users-302 id name
 
 Remove Propriedade
 HDEL users-302 cidade
