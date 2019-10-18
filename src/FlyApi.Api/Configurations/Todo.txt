@@ -14,6 +14,7 @@ Cache com Redis
 
 http://www.kamilgrzybek.com/design/cache-aside-pattern-in-net-core/
 https://medium.com/@renato.groffe/asp-net-core-2-0-implementando-cache-em-apis-rest-cd2df219f13b
+https://medium.com/@nelson.souza/cache-distribu%C3%ADdo-com-net-core-e-redis-f19e361cfd0b
 https://medium.com/@renato.groffe/asp-net-core-dicas-%C3%BAteis-para-o-dia-a-dia-de-um-desenvolvedor-parte-3-9e5ddc1283b0
 
 Tratamento de erros HTTP
