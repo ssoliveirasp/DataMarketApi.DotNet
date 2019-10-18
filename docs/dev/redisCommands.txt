@@ -42,3 +42,6 @@ HMGET users-302 id name
 Remove Propriedade
 HDEL users-302 cidade
 
+**************************************************************************
+Referencias
+https://movile.blog/comecando-a-usar-redis-nas-suas-solucoes/
