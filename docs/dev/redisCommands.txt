@@ -20,3 +20,24 @@ Remover da lista
 lpop lista1
 rpop lista1
 
+Adiciona Hash
+
+Adiciona varios campos
+HMSET users-302 id 302 name carlos
+
+adiciona um campo por vez
+HSET user-302 id 302
+HSET user-302 name carlos
+
+Adiciona novo Campo
+HMSET users-302 cidade "Sao Paulo"
+
+Lista propriedades
+HGETALL users-302
+
+Lista propriedade especifica
+HGET users-302 id
+
+Remove Propriedade
+HDEL users-302 cidade
+
