@@ -4,3 +4,7 @@
 docker run microsoft/dotnet-samples:dotnetapp-nanoserver-sac2016
 
 docker run -d --name band_teste  -p 6379:6379 alexellisio/redis-windows:3.2
+
+
+# Referencias
+https://www.thomasmaurer.ch/2017/10/how-to-run-docker-linux-container-on-windows-server-1709/
