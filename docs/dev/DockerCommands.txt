@@ -6,3 +6,5 @@ docker run hello-world:nanoserver-sac2016
 
 # Referencias
 https://www.thomasmaurer.ch/2017/10/how-to-run-docker-linux-container-on-windows-server-1709/
+
+https://chunliu.me/2018/02/12/running-linux-containers-on-windows-server-2016/
