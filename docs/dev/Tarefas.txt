@@ -25,6 +25,7 @@ Service Fly Core
                       
                   [ ] Segurança
                       [X] Configurar CORS.
+                      [ ] Microsoft Identity (Claims).
                       [ ] Definir mais opções.
                  
                   [X] Documentação
@@ -67,7 +68,8 @@ Service Fly Core
                        
                      [ ] Produção
                          [ ] Analisar se existe configurações especificas para produção.
-                  
+                
+               
               Docker
                   [ ] Criar dockerFile.
                   [ ] Criar DockerCompose.
