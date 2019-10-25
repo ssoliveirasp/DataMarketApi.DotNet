@@ -1,54 +1,76 @@
 Service Fly Core
 
-
    Aplicação
      - FlyApi.Api
+     
           - Configuração do serviço
+          
               Services
                  [ ] Configuração da Aplicação
                  
-                     [ ] Configurar a utilização das configurações da aplicação.
-                     [ ] Configurar MVC
-                         [ ] Versao do core
-                         [ ] Json - Tratamento para valores nulos.
-                         [ ] Xml - Habilitar a configuração.
+                     [X] Configurar a utilização das configurações da aplicação.
+                     [X] Configurar MVC
+                         [X] Versao do core
+                         [X] Json - Tratamento para valores nulos.
+                         [X] Xml - Habilitar a configuração.
                          
-                      - Versionamento
-                         [ ] Configurar versionamento da API.
+                     [X] Versionamento
+                         [X] Configurar versionamento da API.
                          
+                  [ ] Cache
+                      [ ] Configurar Redis 
+
+                  [ ] Mensageria
+                      [ ] Configurar RabbitMQ
+                      
                   [ ] Segurança
-                      [ ] Configurar CORS.
+                      [X] Configurar CORS.
+                      [ ] Definir mais opções.
                  
-                  [ ] Documentação
-                      [ ] Configurar Swagger do serviço com versionamento.
+                  [X] Documentação
+                      [X] Configurar Swagger do serviço com versionamento.
                  
                   [ ] Monitoramento
-                      [ ] Configurar Healthcheck
-                     
-                 [ ] Response
-                     [ ] Configurar a compressão para HTTPS.
+                      [X] Configurar Healthcheck
+                      [ ] Configurar Nlog.
+                      
+                 [X] Response
+                     [X] Configurar a compressão para HTTPS.
               
-                 [ ] Rotas
-                     [ ] Configurar para permitir url com lowerCaseUrls.
-                 
+                 [X] Rotas
+                     [X] Configurar para permitir url com lowerCaseUrls.
                  
               Aplication
-                 [ ] Configuração da Aplicação
-                     [ ] Habilitar arquivo de configuração por ambiente.
-                     [ ] Habilitar MVC.
+                 [X] Configuração da Aplicação
+                     [X] Habilitar arquivo de configuração por ambiente.
+                     [X] Habilitar MVC.
                      
-                 [ ] Segurança
-                     [ ] Habilitar HTTPS Redirection.
+                 [X] Segurança
+                     [X] Habilitar HTTPS Redirection.
                  
-                 [ ] Documentação
-                     [ ] Habilitar Swagger.
+                 [X] Documentação
+                     [X] Habilitar Swagger.
                  
-                 [ ] Monitoramento
-                     [ ] Habilitar Health Checks.
-               
+                 [X] Monitoramento
+                     [X] Habilitar Health Checks.
+                     [ ] Habilitar Log (mongodb) e NLOG.
+
+                 [ ] Cache
+                     [ ] Configurar Redis. 
+
+                 [ ] Mensageria
+                     [ ] Configurar RabbitMQ.
+                      
                  [ ] Exception    
-                     - Em Desenvolvimento
-                       [ ] Habilitar Pagina de Exception para desenvolvedores.                       
-                     - Produção
-                       [ ] Analisar se existe configurações especificas para produção.
+                     [ ] Em Desenvolvimento
+                         [ ] Habilitar Pagina de Exception para desenvolvedores.
+                       
+                     [ ] Produção
+                         [ ] Analisar se existe configurações especificas para produção.
                   
+              Docker
+                  [ ] Criar dockerFile.
+                  [ ] Criar DockerCompose.
+              
+              WatchDog
+                  [ ] Criar site monitoramento (Healthcheck) 
