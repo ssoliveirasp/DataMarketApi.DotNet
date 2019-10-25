@@ -1,0 +1,36 @@
+Service Fly Core
+
+Camadas
+
+   Aplicação
+     - FlyApi.Api
+          - Configuração do serviço
+              Serviçes
+                 [ ] Configurar a utilização das configurações da aplicação.
+                 [ ] Configurar CORS.
+                 [ ] Configurar Swagger do serviço com versionamento.
+                 [ ] Configurar Healthcheck
+                 [ ] 
+                 
+              Aplication
+                 [ ] Habilitar arquivo de configuração por ambiente.
+                 [ ] Habilitar HTTPS Redirection.
+                 [ ] HAbilitar Health Checks.
+                 [ ] Habilitar MVC.
+                 [ ] Habilitar log
+                     - Geral
+                       [ ] Habilitar log da Aplicação 
+                           [ ] utilizando mongoDB e Dapper.
+                           [ ] NLog.
+                           
+                     - Em Desenvolvimento
+                       [ ] Habilitar Pagina de Exception para desenvolvedores.
+                       
+                     - Produção
+                       [ ] Analisar se existe configurações especificas para produção.
+                     
+                    
+          
+         
+      
+      
