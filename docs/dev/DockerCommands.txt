@@ -4,6 +4,19 @@
 docker run microsoft/dotnet-samples:dotnetapp-nanoserver-sac2016
 docker run hello-world:nanoserver-sac2016
 
+#Experimental
+
+$configfile =@"
+{
+    "experimental":true
+}
+"@
+
+$configfile|Out-File -FilePath c:\Programdata\docker\config\daemon.json -Encoding ascii -Force
+
+restart-Service docker
+
+
 # Referencias
 https://www.thomasmaurer.ch/2017/10/how-to-run-docker-linux-container-on-windows-server-1709/
 
