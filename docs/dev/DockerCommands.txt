@@ -4,7 +4,12 @@
 docker run microsoft/dotnet-samples:dotnetapp-nanoserver-sac2016
 docker run hello-world:nanoserver-sac2016
 
+#LCOW 
+
+[Environment]::SetEnvironmentVariable("LCOW_SUPPORTED", "1", "Machine")
+
 #Experimental
+
 
 $configfile =@"
 {
