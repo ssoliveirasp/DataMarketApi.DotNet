@@ -8,6 +8,8 @@ docker run hello-world:nanoserver-sac2016
 
 [Environment]::SetEnvironmentVariable("LCOW_SUPPORTED", "1", "Machine")
 
+https://www.ntweekly.com/2019/09/20/how-to-run-linux-containers-on-windows-server-2016-version-1709/
+
 #Experimental
 
 
