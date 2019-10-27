@@ -24,7 +24,11 @@ $configfile|Out-File -FilePath c:\Programdata\docker\config\daemon.json -Encodin
 restart-Service docker
 
 
+# Create docker run
+docker run --name flyapy-redis -d redis
+
 # Referencias
 https://www.thomasmaurer.ch/2017/10/how-to-run-docker-linux-container-on-windows-server-1709/
 
 https://chunliu.me/2018/02/12/running-linux-containers-on-windows-server-2016/
+
