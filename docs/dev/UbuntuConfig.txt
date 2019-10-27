@@ -6,3 +6,7 @@ sudo lshw -class network
 #Enable Network
 sudo modprobe e100
 sudo ifconfig eth0 up
+
+#Enable Tcp Client 4
+sudo dhclient -v -4
+
