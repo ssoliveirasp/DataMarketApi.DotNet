@@ -23,9 +23,11 @@ $configfile|Out-File -FilePath c:\Programdata\docker\config\daemon.json -Encodin
 
 restart-Service docker
 
-
 # Create docker run
 sudo docker run -d -p 6379:6379 --name flyapy-redis -i -t redis:3.2.5-alpine
+
+# Redis-Cli Install
+sudo apt install redis-tools
 
 # Referencias
 https://www.thomasmaurer.ch/2017/10/how-to-run-docker-linux-container-on-windows-server-1709/
