@@ -25,7 +25,7 @@ restart-Service docker
 
 
 # Create docker run
-docker run --name flyapy-redis -d redis
+sudo docker run -d -p 6379:6379 --name flyapy-redis -i -t redis:3.2.5-alpine
 
 # Referencias
 https://www.thomasmaurer.ch/2017/10/how-to-run-docker-linux-container-on-windows-server-1709/
