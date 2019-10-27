@@ -1,0 +1,8 @@
+
+
+## List Network
+sudo lshw -class network
+
+#Enable Network
+sudo modprobe e100
+sudo ifconfig eth0 up
