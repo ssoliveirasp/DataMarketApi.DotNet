@@ -57,10 +57,11 @@ Service Fly Core
                      [ ] Habilitar Log (mongodb) e NLOG.
 
                  [ ] Cache
-                     [ ] Configurar Redis. 
+                     [X] Configurar Redis (Single Alone).
+                     [ ] Configurar Redis Cluster.
 
                  [ ] Mensageria
-                     [ ] Configurar RabbitMQ.
+                     [ ] Configurar RabbitMQ (Single Alone).
                       
                  [ ] Exception    
                      [ ] Em Desenvolvimento
