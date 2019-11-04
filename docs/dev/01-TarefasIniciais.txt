@@ -18,28 +18,26 @@ Service Fly Core
                          [X] Configurar versionamento da API.
                          
                   [ ] Cache
-                      [ ] Configurar Redis 
+                      [ ] Configurar Redis (Single Alone)
 
                   [ ] Mensageria
-                      [ ] Configurar RabbitMQ
+                      [ ] Configurar RabbitMQ (Single Alone)
                       
                   [ ] Segurança
                       [X] Configurar CORS.
                       [ ] Microsoft Identity (Claims).
-                      [ ] Definir mais opções.
                  
                   [X] Documentação
                       [X] Configurar Swagger do serviço com versionamento.
                  
-                  [ ] Monitoramento
+                  [X] Monitoramento
                       [X] Configurar Healthcheck
-                      [ ] Configurar Nlog.
                       
-                 [X] Response
-                     [X] Configurar a compressão para HTTPS.
+                  [X] Response
+                      [X] Configurar a compressão para HTTPS.
               
-                 [X] Rotas
-                     [X] Configurar para permitir url com lowerCaseUrls.
+                  [X] Rotas
+                      [X] Configurar para permitir url com lowerCaseUrls.
                  
               Aplication
                  [X] Configuração da Aplicação
@@ -54,11 +52,10 @@ Service Fly Core
                  
                  [X] Monitoramento
                      [X] Habilitar Health Checks.
-                     [ ] Habilitar Log (mongodb) e NLOG.
 
                  [ ] Cache
-                     [X] Configurar Redis (Single Alone).
-                     [ ] Configurar Redis Cluster.
+                     [ ] Configurar Redis (Single Alone).
+                     [ ] Criar Repositorio utilizando Cache.
 
                  [ ] Mensageria
                      [ ] Configurar RabbitMQ (Single Alone).
@@ -69,11 +66,7 @@ Service Fly Core
                        
                      [ ] Produção
                          [ ] Analisar se existe configurações especificas para produção.
-                
                
               Docker
                   [ ] Criar dockerFile.
-                  [ ] Criar DockerCompose.
               
-              WatchDog
-                  [ ] Criar site monitoramento (Healthcheck) 
