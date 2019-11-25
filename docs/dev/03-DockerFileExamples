@@ -1,0 +1,16 @@
+#####################################
+##Create Ng-inx
+#####################################
+
+#DockerFile
+from nginx:1.11-alpine
+copy . /usr/share/nginx/html
+expose 80 
+cmd nginx -g daemon off
+
+#DockerBuild
+docker build -t my-nginx-image:latest .
+
+#####################################
+##End Create Ng-inx
+#####################################
