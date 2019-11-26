@@ -31,6 +31,10 @@ COPY . /src/app
 EXPOSE 3000
 CMD [ "npm", "start" ]
 
+#dockerBuild
+docker build -t my-nodejs-app .
+docker run -d --name my-running-app -p 3000:3000 my-nodejs-app
+
 #####################################
 ##End Create NodeJS
 #####################################
