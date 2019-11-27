@@ -1,0 +1,3 @@
+
+# Imagem executa um contador
+docker run -it --name counter loodse/counter
