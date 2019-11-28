@@ -1,5 +1,11 @@
 
 ***********************************************
+## Executar Container
+***********************************************
+
+docker run -d -it --name counter loodse/counter
+
+***********************************************
 ## Criar Imagem com Tag Customizada
 ***********************************************
 docker tag debian webserver
