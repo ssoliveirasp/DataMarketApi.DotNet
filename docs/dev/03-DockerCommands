@@ -12,6 +12,16 @@ docker run -d -it --name counter loodse/counter
 docker inspect -f '{{json .Created}}' counter
 
 ***********************************************
+## Inspecionar Imagem
+***********************************************
+
+docker inspect debian | grep Cmd --after-context=10
+
+docker inspect debian | grep User --before-context=5
+
+docker inspect debian | grep Id
+
+***********************************************
 ## Criar Imagem com Tag Customizada
 ***********************************************
 docker tag debian webserver
