@@ -13,6 +13,11 @@ docker tag debian webserver
 docker run -it webserver
 
 ***********************************************
+## Listar conteudo de um container
+***********************************************
+docker run password ls /app
+
+***********************************************
 ## Criar Imagem
 ***********************************************
 ##Dockerfile
