@@ -86,6 +86,21 @@ apt-get update && apt-get install apache2 -y
 ##End "Create Install Apache"
 #####################################
 
+------------------------------------------------------------
+
+#########################################
+##Start "Create Install Ubuntu e Apache"
+#########################################
+
+FROM ubuntu:18.04
+RUN apt-get update && apt-get install apache2 -y && apt-get clean
+COPY html /var/www/html
+CMD ["apache2ctl", "-DFOREGROUND"]
+
+#####################################
+##End "Create Install Ubuntu e Apache"
+#####################################
+
 #####################################
 ## Docker Files - Commands
 #####################################
