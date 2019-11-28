@@ -57,8 +57,19 @@ docker run -d --name my-production-running-app -e NODE_ENV=production -p 3000:30
 ##End Create NodeJS
 #####################################
 
+--------------------------------------------------------------
 
+#####################################
+##Start "Create Install Apache"
+#####################################
 
+docker run -it debian
+
+apt-get update && apt-get install apache2 -y
+
+#####################################
+##End "Create Install Apache"
+#####################################
 
 #####################################
 ## Docker Files - Commands
