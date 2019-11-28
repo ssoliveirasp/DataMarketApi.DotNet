@@ -82,6 +82,17 @@ docker run -it debian
 apt-get update && apt-get install apache2 -y
 
 
+docker run -it -p 80:80 -n my-web my-image
+
+# interactive shell in the container
+# verify hostname and envrionment is the id of the conainer
+hostname
+env
+df
+
+#check if apache is running
+ps -aufx
+
 #####################################
 ##End "Create Install Apache"
 #####################################
