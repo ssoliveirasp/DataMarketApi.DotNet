@@ -4,6 +4,7 @@
 ***********************************************
 docker tag debian webserver
 
+docker run -it webserver
 
 #####################################
 ## Docker Files - Commands
