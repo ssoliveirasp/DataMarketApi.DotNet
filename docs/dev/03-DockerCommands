@@ -2,8 +2,8 @@
 ***********************************************
 ## Executar Container
 ***********************************************
-
-docker run -d -it --name counter loodse/counter
+#Execução
+docker run -d -it --name counter loodse/counter 
 
 ***********************************************
 ## Criar Imagem com Tag Customizada
@@ -11,6 +11,12 @@ docker run -d -it --name counter loodse/counter
 docker tag debian webserver
 
 docker run -it webserver
+
+***********************************************
+## Criar Imagem
+***********************************************
+##Dockerfile
+docker build -t webserver .
 
 #####################################
 ## Docker Files - Commands
