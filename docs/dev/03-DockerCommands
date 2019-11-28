@@ -5,6 +5,12 @@
 #Execução
 docker run -d -it --name counter loodse/counter 
 
+
+***********************************************
+## Inspecionar Container
+***********************************************
+docker inspect -f '{{json .Created}}' counter
+
 ***********************************************
 ## Criar Imagem com Tag Customizada
 ***********************************************
