@@ -113,6 +113,23 @@ CMD ["apache2ctl", "-DFOREGROUND"]
 #####################################
 
 #####################################
+##Start ".Dockerignore"
+#####################################
+
+#Adiciona informações do arquivo para dockerignore
+echo passwords.txt >> .dockerignore
+echo somelargefile.img >> .dockerignore
+
+#Listar diretorio
+docker run nopassword ls /app
+
+#####################################
+##End ".Dockerignore"
+#####################################
+
+------------------------------------------------------------------------
+
+#####################################
 ## Docker Files - Commands
 #####################################
 Abaixo podemos visualizar todas as opções de instruções disponíveis:
