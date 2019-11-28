@@ -57,6 +57,20 @@ docker run -d --name my-production-running-app -e NODE_ENV=production -p 3000:30
 ##End Create NodeJS
 #####################################
 
+----------------------------------------------------------------------
+
+#####################################
+## Start: "Create Ubuntu e Apache"
+#####################################
+
+FROM ubuntu:18.04
+RUN apt-get update && apt-get install apache2 -y && apt-get clean
+CMD ["apache2ctl", "-DFOREGROUND"]
+
+#####################################
+## End: "Create Ubuntu e Apache"
+#####################################
+
 --------------------------------------------------------------
 
 #####################################
@@ -66,6 +80,7 @@ docker run -d --name my-production-running-app -e NODE_ENV=production -p 3000:30
 docker run -it debian
 
 apt-get update && apt-get install apache2 -y
+
 
 #####################################
 ##End "Create Install Apache"
