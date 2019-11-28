@@ -13,6 +13,13 @@ docker tag debian webserver
 docker run -it webserver
 
 ***********************************************
+## Visualizar Log
+***********************************************
+docker run -d -it --name counter loodse/counter
+
+docker logs counter
+
+***********************************************
 ## Listar conteudo de um container
 ***********************************************
 docker run password ls /app
