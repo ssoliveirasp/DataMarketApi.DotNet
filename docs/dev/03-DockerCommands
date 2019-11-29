@@ -5,11 +5,18 @@
 #Execução
 docker run -d -it --name counter loodse/counter 
 
-
 ***********************************************
 ## Inspecionar Container
 ***********************************************
 docker inspect -f '{{json .Created}}' counter
+
+
+***********************************************
+## Trabalhando com Volumes
+***********************************************
+docker create -v /config --name dataContainer busybox
+docker cp config.conf dataContainer:/config/
+docker run --volumes-from dataContainer ubuntu ls /config
 
 ***********************************************
 ## Migrar dados de um container
@@ -23,18 +30,14 @@ docker cp config.conf dataContainer:/config/
 ***********************************************
 ## Inspecionar Imagem
 ***********************************************
-
 docker inspect debian | grep Cmd --after-context=10
-
 docker inspect debian | grep User --before-context=5
-
 docker inspect debian | grep Id
 
 ***********************************************
 ## Criar Imagem com Tag Customizada
 ***********************************************
 docker tag debian webserver
-
 docker run -it webserver
 
 ***********************************************
