@@ -12,6 +12,15 @@ docker run -d -it --name counter loodse/counter
 docker inspect -f '{{json .Created}}' counter
 
 ***********************************************
+## Migrar dados de um container
+***********************************************
+#Cria uma imagem com o volume
+docker create -v /config --name dataContainer busybox
+
+#Copy files to container
+docker cp config.conf dataContainer:/config/
+
+***********************************************
 ## Inspecionar Imagem
 ***********************************************
 
@@ -45,6 +54,9 @@ docker run password ls /app
 ***********************************************
 ##Dockerfile
 docker build -t webserver .
+
+##Via comando
+docker create -v /config --name dataContainer busybox
 
 #####################################
 ## Docker Files - Commands
