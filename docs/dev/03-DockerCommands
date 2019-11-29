@@ -45,6 +45,11 @@ docker run -d -it --name counter loodse/counter
 docker logs counter
 
 ***********************************************
+## Remove tudo que não estiver sendo usado
+***********************************************
+docker system prune — Delete all unused containers, unused networks, and dangling images.
+
+***********************************************
 ## Listar conteudo de um container
 ***********************************************
 docker run password ls /app
