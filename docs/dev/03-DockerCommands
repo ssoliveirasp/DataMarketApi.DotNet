@@ -21,11 +21,8 @@ docker run --volumes-from dataContainer ubuntu ls /config
 ***********************************************
 ## Migrar dados de um container
 ***********************************************
-#Cria uma imagem com o volume
-docker create -v /config --name dataContainer busybox
-
-#Copy files to container
-docker cp config.conf dataContainer:/config/
+docker export dataContainer > dataContainer.tar
+docker import dataContainer.tar
 
 ***********************************************
 ## Inspecionar Imagem
