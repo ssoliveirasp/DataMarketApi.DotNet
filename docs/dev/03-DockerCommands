@@ -70,6 +70,12 @@ docker create -v /config --name dataContainer busybox
 docker exec redis-server cat /etc/hosts
 docker run --link redis-server:redis alpine cat /etc/hosts
 
+#Apresenta Utilização das maquinas
+docker stats redis-server
+
+#Apresenta um resumo (Containers, Imagens e Volumes)
+docker system df
+
 #####################################
 ## Docker Files - Commands
 #####################################
