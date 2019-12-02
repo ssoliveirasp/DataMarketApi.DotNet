@@ -76,6 +76,16 @@ docker stats redis-server
 #Apresenta um resumo (Containers, Imagens e Volumes)
 docker system df
 
+***********************************************
+## Trabalhando com Redes
+***********************************************
+
+#Links
+ docker run -d --name redis-server redis
+ docker run --link redis-server:redis alpine env
+ docker run --link redis-server:redis alpine cat /etc/hosts
+ docker run --link redis-server:redis alpine ping -c 1 redis
+
 #####################################
 ## Docker Files - Commands
 #####################################
