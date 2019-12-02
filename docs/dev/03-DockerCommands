@@ -63,6 +63,13 @@ docker build -t webserver .
 ##Via comando
 docker create -v /config --name dataContainer busybox
 
+***********************************************
+## Monitoramento de Maquinas
+***********************************************
+#Listar mapeamentos (/etc/hosts)
+docker exec redis-server cat /etc/hosts
+docker run --link redis-server:redis alpine cat /etc/hosts
+
 #####################################
 ## Docker Files - Commands
 #####################################
