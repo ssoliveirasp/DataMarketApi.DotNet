@@ -85,6 +85,7 @@ docker system df
  docker run --link redis-server:redis alpine env
  docker run --link redis-server:redis alpine cat /etc/hosts
  docker run --link redis-server:redis alpine ping -c 1 redis
+ docker run -it --link redis-server:redis redis redis-cli -h redis
 
 #####################################
 ## Docker Files - Commands
