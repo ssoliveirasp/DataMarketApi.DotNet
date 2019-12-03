@@ -87,6 +87,18 @@ docker system df
  docker run --link redis-server:redis alpine ping -c 1 redis
  docker run -it --link redis-server:redis redis redis-cli -h redis
 
+#Network
+ docker network create backend-network
+ docker run -d --name=redis --net=backend-network redis
+ 
+ docker run --net=backend-network alpine env
+ docker run --net=backend-network alpine cat /etc/hosts       //O ip da rede diferente do link não fica neste arquivo
+ 
+ docker run --net=backend-network alpine cat /etc/resolv.conf //O ip da da rede fica neste arquivo
+ docker run --net=backend-network alpine ping -c1 redis
+
+ 
+
 #####################################
 ## Docker Files - Commands
 #####################################
