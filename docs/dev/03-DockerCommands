@@ -89,20 +89,21 @@ docker system df
 
 #Network
  docker network create backend-network
+ docker network create  frontend-network
+ 
+ docker network connect frontend-network redis
+ 
  docker run -d --name=redis --net=backend-network redis
  
  docker run --net=backend-network alpine env
- docker run --net=backend-network alpine cat /etc/hosts       //O ip da rede diferente do link não fica neste arquivo
  
+ docker run --net=backend-network alpine cat /etc/hosts       //O ip da rede diferente do link não fica neste arquivo
  docker run --net=backend-network alpine cat /etc/resolv.conf //O ip da da rede fica neste arquivo
+ 
  docker run --net=backend-network alpine ping -c1 redis
 
- docker network create  frontend-network
- docker network connect frontend-network redis
  docker run -d -p 3000:3000 --net=frontend-network katacoda/redis-node-docker-example
  curl docker:3000
- 
- 
 
 #####################################
 ## Docker Files - Commands
