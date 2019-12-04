@@ -9,7 +9,7 @@ docker run -d -it --name counter loodse/counter
 ## Inspecionar Container
 ***********************************************
 docker inspect -f '{{json .Created}}' counter
-
+docker inspect -f '{{ .NetworkSettings.IPAddress }}' redis-server
 
 ***********************************************
 ## Trabalhando com Volumes (Container Data)
