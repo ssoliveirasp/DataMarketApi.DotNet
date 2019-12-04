@@ -6,12 +6,6 @@
 docker run -d -it --name counter loodse/counter 
 
 ***********************************************
-## Inspecionar Container
-***********************************************
-docker inspect -f '{{json .Created}}' counter
-docker inspect -f '{{ .NetworkSettings.IPAddress }}' redis-server
-
-***********************************************
 ## Trabalhando com Volumes (Container Data)
 ***********************************************
 docker create -v /config --name dataContainer busybox
@@ -30,6 +24,10 @@ docker import dataContainer.tar
 docker inspect debian | grep Cmd --after-context=10
 docker inspect debian | grep User --before-context=5
 docker inspect debian | grep Id
+
+//Format
+docker inspect -f '{{json .Created}}' counter
+docker inspect -f '{{ .NetworkSettings.IPAddress }}' redis-server
 
 ***********************************************
 ## Criar Imagem com Tag Customizada
