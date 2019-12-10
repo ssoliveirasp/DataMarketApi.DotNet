@@ -78,6 +78,19 @@ docker system df
 docker ps --filter "status=exited"
 
 ***********************************************
+## Emular Docker Exit Codes
+***********************************************
+
+#Retorna "Exit Code 1: Indicates failure due to application error
+docker container run alpine sh --name ContainerExit1   -c "exit 1"
+
+#Retorna "Exit Code 137: Indicates failure as container received SIGKILL (Manual intervention or ‘oom-killer’ [OUT-OF-MEMORY])"
+docker container run alpine sh --name ContainerExit137 -c "exit 137"
+
+#Retorna "Exit Code 139: Indicates failure as container received SIGSEGV"
+docker container run alpine sh --name ContainerExit139 -c "exit 139"
+
+***********************************************
 ## Trabalhando com Redes
 ***********************************************
 
