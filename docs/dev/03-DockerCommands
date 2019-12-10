@@ -93,6 +93,9 @@ docker container run --name ContainerExit139 alpine sh -c "exit 139"
 #Retorna "Exit Code 143: Indicates failure as container received SIGTERM"
 docker container run --name ContainerExit143 alpine sh -c "exit 143"
 
+#Exibir codigo da imagem pela inspeção
+docker inspect containerExit137 --format='{{.State.ExitCode}}'
+
 ***********************************************
 ## Trabalhando com Redes
 ***********************************************
