@@ -74,6 +74,9 @@ docker stats redis-server
 #Apresenta um resumo (Containers, Imagens e Volumes)
 docker system df
 
+#Lista maquinas com problemas
+docker ps --filter "status=exited"
+
 ***********************************************
 ## Trabalhando com Redes
 ***********************************************
