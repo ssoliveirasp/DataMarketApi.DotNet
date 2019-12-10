@@ -90,6 +90,9 @@ docker container run --name ContainerExit137 alpine sh -c "exit 137"
 #Retorna "Exit Code 139: Indicates failure as container received SIGSEGV"
 docker container run --name ContainerExit139 alpine sh -c "exit 139"
 
+#Retorna "Exit Code 143: Indicates failure as container received SIGTERM"
+docker container run --name ContainerExit143 alpine sh -c "exit 143"
+
 ***********************************************
 ## Trabalhando com Redes
 ***********************************************
