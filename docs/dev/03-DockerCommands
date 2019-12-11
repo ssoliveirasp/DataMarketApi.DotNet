@@ -132,6 +132,34 @@ docker inspect containerExit137 --format='{{.State.ExitCode}}'
  //Listar Network
  docker network ls
 
+***********************************************
+## Docker Restart Policies
+***********************************************
+// create file cmd force exit
+vi crash.sh
+sleep 30
+exit 1
+
+//Dockerfile
+FROM ubuntu:14.04
+ADD crash.sh /
+CMD /bin/bash /crash.sh
+
+//Build Image
+docker build -t testing_restarts ./  
+
+//Restart no              - Não reinicia a maquina
+docker run -d --name testing_restarts --restart no testing_restarts
+
+//Restart always          - Fica reiniciando sempre que falha a maquina
+docker run -d --name testing_restarts --restart always testing_restarts
+
+//Restart on-failure      - Reinicia a maquina no limite definido
+docker run -d --name testing_restarts --restart on-failure:5 testing_restarts
+
+//Restart  unless-stopped - Reinicia a maquina sempre que falha mais não reinicia a maquina no caso do docker ser reiniciado
+docker run -d --name testing_restarts --restart unless-stopped testing_restarts
+
 #####################################
 ## Docker Files - Commands
 #####################################
