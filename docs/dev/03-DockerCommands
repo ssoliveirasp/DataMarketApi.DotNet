@@ -161,7 +161,7 @@ docker run -d --name testing_restarts --restart on-failure:5 testing_restarts
 docker run -d --name testing_restarts --restart unless-stopped testing_restarts
 
 ***********************************************
-## Trabalhando com Labels
+## Trabalhando com Labels e Metadata
 ***********************************************
 // Single Label
 docker run -l user=12345 -d redis
