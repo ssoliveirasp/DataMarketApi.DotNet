@@ -173,6 +173,12 @@ echo 'user=123461' >> labels && echo 'role=cache' >> labels
 #Execute container with label-file
 docker run --label-file=labels -d redis
 
+//Pesquisar Container por Label
+docker ps     --filter "label=user=scrapbook"
+
+//Pesquisar Images por Label
+docker images --filter "label=vendor=Katacoda"
+
 #####################################
 ## Docker Files - Commands
 #####################################
