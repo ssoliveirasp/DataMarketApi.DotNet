@@ -160,6 +160,19 @@ docker run -d --name testing_restarts --restart on-failure:5 testing_restarts
 //Restart  unless-stopped - Reinicia a maquina sempre que falha mais não reinicia a maquina no caso do docker ser reiniciado
 docker run -d --name testing_restarts --restart unless-stopped testing_restarts
 
+***********************************************
+## Trabalhando com Labels
+***********************************************
+// Single Label
+docker run -l user=12345 -d redis
+
+//External Files
+#Label file
+echo 'user=123461' >> labels && echo 'role=cache' >> labels
+
+#Execute container with label-file
+docker run --label-file=labels -d redis
+
 #####################################
 ## Docker Files - Commands
 #####################################
