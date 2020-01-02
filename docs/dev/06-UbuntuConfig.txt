@@ -10,3 +10,8 @@ sudo ifconfig eth0 up
 #Enable Tcp Client 4
 sudo dhclient -v -4
 
+#Adicionar usuário
+useradd -m -d /home/lowprivuser -p $(openssl passwd -1 password) lowprivuser
+
+#Alternar usuário
+sudo su lowprivuser
