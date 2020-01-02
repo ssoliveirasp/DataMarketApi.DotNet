@@ -32,3 +32,6 @@ services:
     - dados_${ENV_APP}:/data
   labels:
     - 'app.environment=${ENV_APP}'
+    
+-------------------------------------
+export ENV_APP=devel ; docker-compose -p $ENV_APP\ up -d
