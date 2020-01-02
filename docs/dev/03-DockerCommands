@@ -144,12 +144,15 @@ sleep 30
 exit 1
 
 //Dockerfile
-FROM ubuntu:14.04
+FROM ubuntu:14.04 AS builder
 ADD crash.sh /
 CMD /bin/bash /crash.sh
 
 //Build Image
 docker build -t testing_restarts ./  
+
+//Images with multi-stage builds
+docker build --target builder -t alexellis2/href-counter:latest .
 
 //Restart no              - Não reinicia a maquina
 docker run -d --name testing_restarts --restart no testing_restarts
