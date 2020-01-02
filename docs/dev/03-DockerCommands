@@ -69,7 +69,10 @@ docker exec redis-server cat /etc/hosts
 docker run --link redis-server:redis alpine cat /etc/hosts
 
 #Apresenta Utilização das maquinas
-docker stats redis-server
+ docker stats redis-server
+ 
+ //Combining the two we can take the list of all our running containers provided  
+ docker ps -q | xargs docker stats
 
 #Apresenta um resumo (Containers, Imagens e Volumes)
 docker system df
