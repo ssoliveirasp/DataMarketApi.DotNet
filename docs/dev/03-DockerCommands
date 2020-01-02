@@ -29,6 +29,9 @@ docker inspect debian | grep Id
 docker inspect -f '{{json .Created}}' counter
 docker inspect -f '{{ .NetworkSettings.IPAddress }}' redis-server
 
+//Listagens de maquinas e endereço IP
+docker ps -q | xargs docker inspect --format '{{ .Id }} - {{ .Name }} - {{ .NetworkSettings.IPAddress }}'
+
 ***********************************************
 ## Criar Imagem com Tag Customizada
 ***********************************************
@@ -184,6 +187,13 @@ docker ps     --filter "label=user=scrapbook"
 
 //Pesquisar Images por Label
 docker images --filter "label=vendor=Katacoda"
+
+***********************************************
+## Listagem de imagens 
+***********************************************
+docker ps --format '{{.Names}} container is using {{.Image}} image'
+
+docker ps --format 'table {{.Names}}\t{{.Image}}'
 
 #####################################
 ## Docker Files - Commands
