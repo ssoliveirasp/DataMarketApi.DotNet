@@ -17,3 +17,6 @@ dotnet add FlyApi.Infra/FlyApi.Infra.csproj
 
 REM Adiciona Package AspNetCore.All
 dotnet add package Microsoft.AspNetCore.All -v 2.0.5
+
+REM Arquivo de configuração do  Nuget
+dotnet new nugetconfig
