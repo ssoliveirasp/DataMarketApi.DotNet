@@ -5,3 +5,7 @@ navegue até a pasta %windir%/system32/inetsrv/config.
 Abra o arquivo applicationHost.config.
 Localize o elemento <system.applicationHost><applicationPools><applicationPoolDefaults><processModel>.
 Confirme se o atributo setProfileEnvironment não está presente, que tem como padrão o valor true, ou defina explicitamente o valor do atributo como true.
+
+Identidade do Pool de Aplicativos
+
+ICACLS C:\sites\MyWebApp /grant "IIS AppPool\DefaultAppPool":F
