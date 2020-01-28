@@ -1,0 +1,7 @@
+Configurar o pool de aplicativos do IIS para carregar o perfil do usuário
+
+setProfileEnvironment é definido como false. Se as chaves não estiverem armazenadas no diretório do perfil do usuário como esperado:
+navegue até a pasta %windir%/system32/inetsrv/config.
+Abra o arquivo applicationHost.config.
+Localize o elemento <system.applicationHost><applicationPools><applicationPoolDefaults><processModel>.
+Confirme se o atributo setProfileEnvironment não está presente, que tem como padrão o valor true, ou defina explicitamente o valor do atributo como true.
