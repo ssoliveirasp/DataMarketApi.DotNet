@@ -2,3 +2,6 @@ Serilog
 
 Like many other libraries for .NET, Serilog provides diagnostic logging to file
 https://serilog.net/
+
+# Projeto 
+https://www.humankode.com/asp-net-core/logging-with-elasticsearch-kibana-asp-net-core-and-docker
