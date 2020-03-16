@@ -1,3 +1,6 @@
+NLog
+https://nlog-project.org/
+
 Serilog 
 
 Like many other libraries for .NET, Serilog provides diagnostic logging to file
